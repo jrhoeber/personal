@@ -1,0 +1,17 @@
+title: Jordan Hoeber
+description: Jordan Hoeber's Personal Site
+url: https://jordanhoeber.com
+
+# Keep relative_url working cleanly for both local + production
+baseurl: ""
+
+# Pages without explicit frontmatter shouldn't be processed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .DS_Store
+
+# Default footer note across pages (override per-page via frontmatter)
+foot_note: open to new thoughts

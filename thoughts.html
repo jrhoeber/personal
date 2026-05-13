@@ -1,0 +1,79 @@
+---
+layout: default
+title: Thoughts
+section: thoughts
+---
+
+<h1>Thoughts</h1>
+
+<section class="thoughts">
+  <article class="thought" id="2026-05-19">
+    <div class="post-meta"><time datetime="2026-05-19">May 19th, 2026</time></div>
+    <div class="prose">
+      <p>The worst thing about vibe coding is getting so deep that you form an LLC, get a business bank account, create a company website &amp; email, apply for a D-U-N-S number, create a TOS &amp; privacy policy, build content moderation, and create a process for DMCA request handling just so you can launch your app that probably no one will ever use.</p>
+    </div>
+  </article>
+
+  <article class="thought" id="2026-05-13">
+    <div class="post-meta"><time datetime="2026-05-13">May 13th, 2026</time></div>
+    <div class="prose">
+      <p>Slow down to speed up with AI.</p>
+      <p>LLMs struggle with highly complex, fragile code bases in the same way that developers struggle with them. LLM performance improves dramatically when underlying quality issues are addressed.</p>
+      <p>Over the course of a 6 month period, teams that balance structural improvements with new work end up shipping more value than teams that spend 6 months shipping new work.</p>
+      <p>Matt Beleck, Head of Engineering for ACV Auctions's Transport org, has spent years working with the team to improve code quality. This investment has paid off big as the team has aggressively adopted agentic development. Some of Matthew's tips:</p>
+      <ul>
+      <li>Clear naming: LLMs are language engines. Use accurate, descriptive names for methods and variables</li>
+      <li>Logical structure: Ensure your repos are easy to navigate. Think clean directory structures, small files, and small methods.</li>
+      <li>Codify standards: Document engineering standards into explicit, enforceable rules that the LLM can execute, not interpret. (Bonus tip: Use historical PR and task feedback to convert common patterns into rules).</li>
+      <li>Provide context: LLMs perform best when they understand not just where to look, but when to look. Document files like SECURITY.md with trigger cues (e.g., "read this for a deep explanation of PII handling") and reinforce those keywords in prompts and code.</li>
+      </ul>
+      <p>All of these tips probably sound very familiar. If code is easier for people to understand, it's easier for LLMs to understand.</p>
+      <p>New tools, same best practices.</p>
+    </div>
+  </article>
+
+  <article class="thought" id="2026-05-05">
+    <div class="post-meta"><time datetime="2026-05-05">May 5th, 2026</time></div>
+    <div class="prose">
+      <p>CLIs are a superpower for non-technical people.</p>
+      <p>At ACV, we're seeing that PMs &amp; designers with less technical backgrounds lean into CLIs like Claude Code. We're seeing them come up with the most creative, unexpected applications. Something about the struggle of learning how to work in a terminal, stumbling your way through set up, and finally getting everything working forces people to think differently.</p>
+      <p>I've spent more of my career as an engineer than as a PM, so CLIs come naturally to me. It was obvious to me how Claude Code could be used to create prototypes, build things, and plan changes. People without engineering backgrounds have no preconceived notions that guide them to the 'obvious' applications.</p>
+      <p>They see a weird new tool and a weird new interface and let their creativity run wild, quickly moving past PRD and prototype creation into entirely new operating flows.</p>
+      <p>Some interesting examples</p>
+      <p>One of our Lead Product Designers, Michael Belfatto, is using Claude Code to push the pace and quality of how design ships at ACV. On one of our highest trafficked, most complex flows, he used Claude Code to:</p>
+      <ul>
+        <li>Build a working prototype of the redesigned experience, fast enough to pressure-test the concept with stakeholders before committing engineering resources</li>
+        <li>Translate the prototype and existing flow into detailed engineering requirements</li>
+        <li>Hand off the project with production-ready components engineering could immediately ship from</li>
+      </ul>
+      <p>The result was a design process that compressed weeks of back-and-forth into days, and a handoff that let the team start shipping on day one.</p>
+      <p>Chris Maue, PM for post sale, has completely changed how he approaches his hands on keyboard work. His flow looks something like:</p>
+      <ul>
+        <li>Dumps his unstructured thoughts into Claude Code and asks it to pressure test his ideas.</li>
+        <li>Uses Atlassian, and GitHub MCPs to validate changes against existing docs and functionality.</li>
+        <li>Iterates, generates a living doc and publishes it to Confluence.</li>
+        <li>Creates a prototype, generates tickets and hands everything off.</li>
+        <li>Claude reads Confluence and Jira to publish weekly updates to stakeholders.</li>
+      </ul>
+      <p>All while typing away in a terminal, saving hours on manual work and hand offs.</p>
+      <p>Ashish Jain, PM for guarantees, is using Claude Code + Playwright Plugin to run a first pass 'user demo'.</p>
+      <ul>
+        <li>Creates user personas in .md files</li>
+        <li>Asks Claude to 'Pretend you're a used car manager and tell me what you think of this new feature'.</li>
+        <li>Claude then opens up the site, takes a look around, and writes a feedback doc.</li>
+      </ul>
+      <p>It's surprising how accurate the feedback is when we move forward to demos with real users!</p>
+      <p>PMs and designers, what interesting things are you doing with AI?</p>
+    </div>
+  </article>
+
+  <article class="thought" id="2026-04-28">
+    <div class="post-meta"><time datetime="2026-04-28">April 28th, 2026</time></div>
+    <div class="prose">
+      <p>It's hard to reconcile AI-related claims of 10x increases in delivery speed with reality. Established companies like Google, Salesforce, Shopify, etc. are reporting more modest -10% to +30% changes.</p>
+      <p>The obvious answer is that AI is much better at creating greenfield code at breakneck speeds but struggles with established, complex codebases.</p>
+      <p>The question I'm wrestling with is whether this greenfield advantage will translate into true disruption, where new entrants build effective wedges and blaze past incumbents, or if these new entrants will quickly hit a plateau and slow down as complexity increases.</p>
+      <p>Complexity can take years to build up, and modern LLMs probably haven't been around long enough to see how this will ultimately play out. I am curious what other people are seeing.</p>
+    </div>
+  </article>
+</section>

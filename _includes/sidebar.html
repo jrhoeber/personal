@@ -1,0 +1,23 @@
+<aside class="sidebar">
+  <div class="brand">
+    <a href="{{ '/' | relative_url }}">Jordan Hoeber</a>
+  </div>
+
+  <hr />
+
+  <nav>
+    <ul>
+      <li><a href="{{ '/thoughts.html' | relative_url }}"{% if page.section == 'thoughts' %} class="active"{% endif %}>Thoughts</a></li>
+      <li><a href="{{ '/reading-list.html' | relative_url }}"{% if page.section == 'reading' %} class="active"{% endif %}>Reading list</a></li>
+      <li><a href="{{ '/about.html' | relative_url }}"{% if page.section == 'about' %} class="active"{% endif %}>About Me</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <div class="connect">
+    <a href="mailto:jordan.hoeber@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/jhoeber/">LinkedIn</a>
+    <a href="https://github.com/jrhoeber">GitHub</a>
+  </div>
+</aside>
